@@ -59,14 +59,8 @@ int main() {
     // הלולאה המרכזית (Game Loop)
     for (int frame = 0; frame < NUM_FRAMES; frame++) {
         
-        // 1. כבידה (מושך למטה, משתמש במסה המקורית)
-        add_gravity(world, 9.8f);
-
-        // 2. אווירודינמיקה: רוח חזקה ימינה (50.0) מקדם גרר 0.05
-        add_aerodynamics(world, 0.05f, 50.0f, 0.0f);
-
-        // 3. אינטגרציה (משתמשת ב-inv_m)
-        step_physics(world, dT);
+        //changed to the main running function (to be) from the front end.
+        update_frame(world, dT);
     }
 
     clock_t end_time = clock();

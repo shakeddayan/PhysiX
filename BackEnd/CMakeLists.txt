@@ -8,7 +8,6 @@ add_library(BackEnd SHARED
         world.c
         structs.c structs.h
         constants.h
-        calculator.c calculator.h
         benchmark.c
         benchmark.h)
 
@@ -17,7 +16,6 @@ add_executable(TestApp
         world.c
         structs.c structs.h
         constants.h
-        calculator.c calculator.h
         benchmark.c
         benchmark.h)
 

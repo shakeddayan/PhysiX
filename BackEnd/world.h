@@ -2,21 +2,6 @@
 #define BACKEND_LIBRARY_H
 #include "structs.h"
 
-
-
-
-
-
-
-/* PHYSICS FUNCTIONS */
-
-//calculates the acceleration of an object
-P_Vector *calc_acc(Obj *obj);
-//calculates the speed of an object.
-void calc_speed(Obj *obj);
-//calculates the position of an object.
-void calc_pos(Obj *obj);
-
 //step 1 frame with all data.
 void step_physics(Data *data, float dt);
 void add_gravity(Data *data, float g);
